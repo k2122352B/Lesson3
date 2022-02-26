@@ -35,7 +35,7 @@ def index():
         s2 = "The score of credit card upgrade based on regression is " + str(pred2)
         model3 = joblib.load("CCU_NN")
         pred3 = model3.predict ([[purchases, suppcard]])
-        s3 = "The score of credit card upgrade based on neural neywork is " + str(pred3)
+        s3 = "The score of credit card upgrade based on neural network is " + str(pred3)
         model4 = joblib.load("CCU_RF")
         pred4 = model4.predict ([[purchases, suppcard]])
         s4 = "The score of credit card upgrade based on random forest is " + str(pred4)
